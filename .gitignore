@@ -1,0 +1,8 @@
+*.o
+*.d
+*.vcxproj
+x64
+.vs
+TP1Cpp/x64
+TP1Cpp/*.vcxproj*
+*.sln
