@@ -5,6 +5,7 @@ Livre::Livre(std::string titre, std::string auteur, std::string langue, std::str
 	_auteur = auteur;
 	_langue = langue;
 	_genre = genre;
+	_date = date;
 	_isbn = isbn;
 }
 
@@ -14,4 +15,8 @@ std::string Livre::getIsbn() {
 
 void Livre::setListIdTab(std::string id) {
 	_listeIdTab.push_back(id);
+}
+
+Date Livre::getDate() {
+	return _date;
 }
