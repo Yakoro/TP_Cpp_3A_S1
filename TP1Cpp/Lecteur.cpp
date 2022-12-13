@@ -6,12 +6,27 @@ Lecteur::Lecteur(std::string id, std::string nom, std::string prenom) {
 	_prenom = prenom;
 
 }
-std::string Lecteur::id() {
+std::string Lecteur::getId() {
 	return _id;
 }
-std::string Lecteur::nom() {
+
+std::string Lecteur::getNom() {
 	return _nom;
 }
-std::string Lecteur::prenom() {
+
+std::string Lecteur::getPrenom() {
 	return _prenom;
+}
+
+void Lecteur::setListIsbn(std::string isbnLivre) {
+	_listIsbn.push_back(isbnLivre);
+}
+
+std::string Lecteur::dernierEmprunt() {
+	if (!_listIsbn.empty()) {
+		return _listIsbn.back();
+	}
+	else {
+		return "0";
+	}
 }

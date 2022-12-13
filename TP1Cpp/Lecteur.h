@@ -6,9 +6,11 @@ class Lecteur
 {
 public:
 	Lecteur(std::string id, std::string nom, std::string prenom);
-	std::string id();
-	std::string nom();
-	std::string prenom();
+	std::string getId();
+	std::string getNom();
+	std::string getPrenom();
+	std::string dernierEmprunt();
+	void setListIsbn(std::string isbnLivre);
 
 private:
 	std::string _id;
@@ -16,6 +18,6 @@ private:
 	std::string _prenom;
 	std::string _id_livre;
 
-	std::vector<std::string> _list_isbn;
+	std::vector<std::string> _listIsbn;
 };
 

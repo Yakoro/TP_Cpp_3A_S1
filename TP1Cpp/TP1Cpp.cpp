@@ -2,6 +2,7 @@
 #include "Date.h"
 #include "Livre.h"
 #include "Lecteur.h"
+#include "Emprunt.h"
 
 int main() {
 	
@@ -11,11 +12,18 @@ int main() {
 
 	Livre livre1("Les Misérables", auteur, "Français", "Roman", date, "01234567890");
 
+	Lecteur lecteur1("012345", "Stefane", "Bern");
+
+	Emprunt emprunt1(date, lecteur1, livre1, "01234567890", "012345");
+
 	std::cout << livre1.getIndiceEmprunt() << std::endl;
-	livre1.livreEmprunt();
+	emprunt1.EmpruntLivre();
 	std::cout << livre1.getIndiceEmprunt() << std::endl;
-	livre1.livreRestitution();
-	std::cout << livre1.getIndiceEmprunt() << std::endl;
+
+	std::cout << livre1.dernierEmprunteur() << std::endl;
+	std::cout << lecteur1.dernierEmprunt() << std::endl;
+
+
 
 	/*std::cout << "AUTEUR" << std::endl;
 	std::cout << "Nom : " << (livre1.getAuteur()).getNom() << std::endl;
@@ -23,7 +31,6 @@ int main() {
 	std::cout << "Date de naissance : " << ((livre1.getAuteur()).getDate()).getDay() << " / " << ((livre1.getAuteur()).getDate()).getMonth() << " / " << ((livre1.getAuteur()).getDate()).getYear() << std::endl;
 	std::cout << "Isbn : " << livre1.getIsbn() << std::endl;
 
-	Lecteur lecteur1("012345", "Stefane", "Bern");
 
 	std::cout << lecteur1.nom() << " " << lecteur1.prenom() << " " << lecteur1.id() << std::endl;
 	*/

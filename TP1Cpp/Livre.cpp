@@ -30,3 +30,16 @@ void Livre::livreEmprunt() {
 void Livre::livreRestitution() {
 	_indiceEmprunt = 0;
 }
+
+std::string Livre::dernierEmprunteur() {
+	if (!_listeIdTab.empty()) {
+		return _listeIdTab.back();
+	}
+	else {
+		return "0";
+	}
+}
+
+void Livre::setListeIdTab(std::string idLecteur) {
+	_listeIdTab.push_back(idLecteur);
+}

@@ -15,6 +15,8 @@ public:
 	bool getIndiceEmprunt();
 	void livreEmprunt();
 	void livreRestitution();
+	std::string dernierEmprunteur();
+	void setListeIdTab(std::string idLecteur);
 
 private:
 	std::string _titre;

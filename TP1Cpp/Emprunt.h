@@ -16,11 +16,14 @@ public:
 	Date getDateEmprunt();
 	Livre getLivre();
 	void EmpruntLivre();
+	void RestitutionLivre();
+	void TabLivre();
+	void TabLecteur();
 
 private:
 	Date _dateEmprunt;
-	Livre _livre;
-	Lecteur _lecteur;
+	Livre& _livre;
+	Lecteur& _lecteur;
 
 	std::string _idb;
 	std::string _idr;
