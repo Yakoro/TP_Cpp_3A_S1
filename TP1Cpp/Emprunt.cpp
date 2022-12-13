@@ -15,7 +15,7 @@ void Emprunt::EmpruntLivre() {
 
 	}
 	else {
-		std::cout << "Livre non disponible";
+		std::cout << "Livre non disponible" << std::endl;
 	}
 }
 

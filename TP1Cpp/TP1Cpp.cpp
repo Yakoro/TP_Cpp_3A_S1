@@ -24,8 +24,8 @@ int main() {
 	Date dateNaissance4(31, 7, 1919);
 
 	Date dateEmprunt1(2, 12, 2022);
-	Date dateEmprunt2(2, 12, 2022);
-	Date dateEmprunt3(2, 12, 2022);
+	Date dateEmprunt2(10, 12, 2022);
+	Date dateEmprunt3(13, 12, 2022);
 
 	Auteur auteur1("Hugo", "Victor", dateNaissance1, "1000");
 	Auteur auteur2("de Maupassant", "Guy", dateNaissance2, "2000");
@@ -48,19 +48,20 @@ int main() {
 	Lecteur lecteur3("012347", "Benameur", "Camil");
 
 	Emprunt emprunt1(dateEmprunt1, lecteur1, livre1);
+	Emprunt emprunt2(dateEmprunt2, lecteur2, livre1);
+	emprunt1.EmpruntLivre();
+	std::cout << livre1.dernierEmprunteur() << std::endl;
+	std::cout << lecteur1.dernierEmprunt() << std::endl;
+	emprunt1.RestitutionLivre();
+	emprunt2.EmpruntLivre();
+	std::cout << livre1.dernierEmprunteur() << std::endl;
+	std::cout << lecteur1.dernierEmprunt() << std::endl;
 
-	//std::cout << livre1.getIndiceEmprunt() << std::endl;
-	//emprunt1.EmpruntLivre();
-	//std::cout << livre1.getIndiceEmprunt() << std::endl;
-
-	//std::cout << livre1.dernierEmprunteur() << std::endl;
-	//std::cout << lecteur1.dernierEmprunt() << std::endl;
-
-	std::cout << livre1 << std::endl;
+	/*std::cout << livre1 << std::endl;
 	std::cout << std::endl;
 	std::cout << lecteur1 << std::endl;
 	std::cout << std::endl;
-	std::cout << auteur1 << std::endl;
+	std::cout << auteur1 << std::endl;*/
 
 	Bibli bibli1;
 	bibli1.addAuteur(auteur1);
