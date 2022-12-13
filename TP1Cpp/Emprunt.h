@@ -11,7 +11,7 @@
 class Emprunt
 {
 public:
-	Emprunt(Date& dateEmprunt, Lecteur& lecteur, Livre& livre, std::string _idb, std::string _idr);
+	Emprunt(Date& dateEmprunt, Lecteur& lecteur, Livre& livre);
 	Lecteur getLecteur();
 	Date getDateEmprunt();
 	Livre getLivre();

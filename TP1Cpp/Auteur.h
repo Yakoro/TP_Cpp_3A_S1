@@ -15,4 +15,6 @@ private:
 	Date _dateNaissance;
 	std::string _isbn;
 
+	friend std::ostream& operator<<(std::ostream& os, Auteur& auteur);
+
 };

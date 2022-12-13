@@ -1,7 +1,7 @@
 #include "emprunt.h"
 
-Emprunt::Emprunt(Date& dateEmprunt, Lecteur& lecteur, Livre& livre, std::string idb, std::string idr)
-: _dateEmprunt(dateEmprunt),_lecteur(lecteur), _livre(livre), _idr(idb), _idb(idr) {
+Emprunt::Emprunt(Date& dateEmprunt, Lecteur& lecteur, Livre& livre)
+: _dateEmprunt(dateEmprunt),_lecteur(lecteur), _livre(livre) {
 
 }
 

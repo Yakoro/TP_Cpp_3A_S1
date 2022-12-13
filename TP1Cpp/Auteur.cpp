@@ -18,3 +18,12 @@ Date Auteur::getDate() {
 std::string Auteur::getIsbn() {
 	return _isbn;
 }
+
+std::ostream& operator<<(std::ostream& os, Auteur& auteur) {
+	os << auteur.getPrenom() << " " << auteur.getNom() << std::endl;
+	os << auteur.getDate().getDay() << "/" << auteur.getDate().getMonth() << "/" << auteur.getDate().getYear() << std::endl;
+	os << auteur.getIsbn() << std::endl;
+
+	return os;
+
+}

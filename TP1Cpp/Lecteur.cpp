@@ -30,3 +30,11 @@ std::string Lecteur::dernierEmprunt() {
 		return "0";
 	}
 }
+
+std::ostream& operator<<(std::ostream& os, Lecteur& lecteur) {
+	os << lecteur.getPrenom() << " " << lecteur.getNom() << std::endl;
+	os << lecteur.getId() << std::endl;
+
+	return os;
+
+}

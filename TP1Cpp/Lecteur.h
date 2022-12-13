@@ -19,5 +19,7 @@ private:
 	std::string _id_livre;
 
 	std::vector<std::string> _listIsbn;
+
+	friend std::ostream& operator<<(std::ostream& os, Lecteur& lecteur);
 };
 
