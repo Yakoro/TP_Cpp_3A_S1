@@ -3,6 +3,8 @@
 Livre::Livre(std::string titre, Auteur& auteur, std::string langue, std::string genre, Date& date, std::string isbn, bool indiceEmprunt)
 :_titre(titre), _auteur(auteur), _langue(langue), _genre(genre), _date(date), _isbn(isbn), _indiceEmprunt(indiceEmprunt)  {}
 
+Livre::Livre() {}
+
 std::string Livre::getTitre() {
 	return _titre;
 }

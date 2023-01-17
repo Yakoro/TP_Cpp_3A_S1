@@ -8,7 +8,7 @@
 class Livre {
 public:
 	Livre(std::string titre, Auteur& auteur, std::string langue, std::string genre,Date& date, std::string isbn, bool indiceEmprunt = 0);
-	
+	Livre();
 	std::string getTitre();
 	Auteur getAuteur();
 	std::string getLangue();

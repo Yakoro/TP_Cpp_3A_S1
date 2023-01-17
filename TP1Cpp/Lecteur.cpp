@@ -6,6 +6,9 @@ Lecteur::Lecteur(std::string id, std::string nom, std::string prenom) {
 	_prenom = prenom;
 
 }
+
+Lecteur::Lecteur(){}
+
 std::string Lecteur::getId() {
 	return _id;
 }

@@ -21,6 +21,7 @@ void Emprunt::EmpruntLivre() {
 
 void Emprunt::RestitutionLivre() {
 	std::string dernierE = _livre.dernierEmprunteur();
+	std::cout << dernierE << std::endl;
 		if (dernierE == _lecteur.getId()) {
 			_livre.livreRestitution();
 		}

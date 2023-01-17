@@ -5,6 +5,7 @@
 class Auteur {
 public:
 	Auteur(std::string nom, std::string prenom, Date& dateNaissance, std::string isbn);
+	Auteur();
 	std::string getNom();
 	std::string getPrenom();
 	Date getDate();

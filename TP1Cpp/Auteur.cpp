@@ -3,6 +3,8 @@
 Auteur::Auteur(std::string nom, std::string prenom, Date& dateNaissance, std::string isbn)
 : _nom(nom), _prenom(prenom), _dateNaissance(dateNaissance), _isbn(isbn) {}
 
+Auteur::Auteur() {}
+
 std::string Auteur::getNom() {
 	return _nom;
 }
